@@ -19,28 +19,32 @@ st.set_page_config(
     page_title="Vendor Revenue Analysis",
     page_icon="🏪",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
+    theme="light"  # Force light theme
 )
 
 # Custom CSS for better design
 st.markdown("""
     <style>
     .main {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+    }
+    .stApp {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
     }
     .stButton>button {
-        background: linear-gradient(45deg, #4a90e2, #357abd);
-        color: white;
-        border: none;
-        border-radius: 8px;
-        padding: 10px 24px;
-        font-weight: 600;
+        background: linear-gradient(45deg, #4a90e2, #357abd) !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 8px !important;
+        padding: 10px 24px !important;
+        font-weight: 600 !important;
     }
     .stMetric {
         background: white !important;
         padding: 20px !important;
         border-radius: 12px !important;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.15) !important;
         color: #111827 !important;
     }
     .stMetric [data-testid="stMetricLabel"] {
@@ -63,27 +67,33 @@ st.markdown("""
         color: #4f46e5 !important;
         font-weight: 600;
     }
-    .stMarkdown, .stText {
+    .stMarkdown, .stText, .stMarkdown p {
         color: #1f2937 !important;
     }
+    .stSelectbox label, .stSlider label {
+        color: #374151 !important;
+    }
+    .stSelectbox [data-baseweb="select"] {
+        background-color: white !important;
+        color: #1f2937 !important;
+    }
+    .stSelectbox [data-baseweb="select"] div {
+        color: #1f2937 !important;
+    }
+    .stCheckbox label {
+        color: #1f2937 !important;
+    }
+    [data-testid="stWidgetLabel"] label {
+        color: #374151 !important;
+    }
     .sidebar .sidebar-content {
-        background: linear-gradient(180deg, #1e3a8a 0%, #3730a3 100%);
+        background: linear-gradient(180deg, #1e3a8a 0%, #3730a3 100%) !important;
     }
     .sidebar .sidebar-content .stRadio label {
         color: white !important;
     }
     .sidebar .sidebar-content h1, .sidebar .sidebar-content h2, .sidebar .sidebar-content h3 {
         color: white !important;
-    }
-    .stSelectbox>div>div {
-        border-radius: 8px;
-    }
-    .stCheckbox>div>label {
-        font-weight: 500;
-        color: #1f2937 !important;
-    }
-    .stSlider label {
-        color: #374151 !important;
     }
     </style>
     """, unsafe_allow_html=True)
