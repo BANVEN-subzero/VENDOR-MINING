@@ -343,8 +343,8 @@ elif page == "💰 Revenue Prediction":
     
     # Prepare data for prediction (cached)
     @st.cache_resource
-    def get_model_and_encoders():
-        df_pred = df.copy()
+    def get_model_and_encoders(data):
+        df_pred = data.copy()
         le_city = LabelEncoder()
         le_market = LabelEncoder()
         le_category = LabelEncoder()
@@ -385,7 +385,7 @@ elif page == "💰 Revenue Prediction":
         
         return model, le_city, le_market, le_category, le_dow, features, performance
     
-    model, le_city, le_market, le_category, le_dow, features, performance = get_model_and_encoders()
+    model, le_city, le_market, le_category, le_dow, features, performance = get_model_and_encoders(df)
     
     st.subheader("📈 Model Performance (Gradient Boosting)")
     col1, col2, col3 = st.columns(3)
