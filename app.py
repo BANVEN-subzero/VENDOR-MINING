@@ -19,8 +19,7 @@ st.set_page_config(
     page_title="Vendor Revenue Analysis",
     page_icon="🏪",
     layout="wide",
-    initial_sidebar_state="expanded",
-    theme="light"  # Force light theme
+    initial_sidebar_state="expanded"
 )
 
 # Custom CSS for better design
