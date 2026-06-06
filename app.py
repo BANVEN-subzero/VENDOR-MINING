@@ -41,27 +41,44 @@ st.markdown("""
         padding: 20px;
         border-radius: 12px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        color: #1f2937 !important;
+    }
+    .stMetric label {
+        color: #374151 !important;
     }
     h1 {
-        color: #1e3a8a;
+        color: #1e3a8a !important;
         font-weight: 800;
     }
     h2 {
-        color: #3730a3;
+        color: #3730a3 !important;
         font-weight: 700;
     }
     h3 {
-        color: #4f46e5;
+        color: #4f46e5 !important;
         font-weight: 600;
+    }
+    .stMarkdown, .stText {
+        color: #1f2937 !important;
     }
     .sidebar .sidebar-content {
         background: linear-gradient(180deg, #1e3a8a 0%, #3730a3 100%);
+    }
+    .sidebar .sidebar-content .stRadio label {
+        color: white !important;
+    }
+    .sidebar .sidebar-content h1, .sidebar .sidebar-content h2, .sidebar .sidebar-content h3 {
+        color: white !important;
     }
     .stSelectbox>div>div {
         border-radius: 8px;
     }
     .stCheckbox>div>label {
         font-weight: 500;
+        color: #1f2937 !important;
+    }
+    .stSlider label {
+        color: #374151 !important;
     }
     </style>
     """, unsafe_allow_html=True)
