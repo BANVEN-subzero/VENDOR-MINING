@@ -37,14 +37,19 @@ st.markdown("""
         font-weight: 600;
     }
     .stMetric {
-        background: white;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        color: #1f2937 !important;
+        background: white !important;
+        padding: 20px !important;
+        border-radius: 12px !important;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+        color: #111827 !important;
     }
-    .stMetric label {
+    .stMetric [data-testid="stMetricLabel"] {
         color: #374151 !important;
+    }
+    .stMetric [data-testid="stMetricValue"] {
+        color: #111827 !important;
+        font-size: 28px !important;
+        font-weight: 700 !important;
     }
     h1 {
         color: #1e3a8a !important;
