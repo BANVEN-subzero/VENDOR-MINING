@@ -69,22 +69,44 @@ st.markdown("""
     .stMarkdown, .stText, .stMarkdown p {
         color: #1f2937 !important;
     }
-    .stSelectbox label, .stSlider label {
-        color: #374151 !important;
+    /* Enhanced widget styles for better visibility */
+    .stSelectbox label, .stSlider label, .stCheckbox label, .stRadio label {
+        color: #1f2937 !important;
+        font-weight: 600 !important;
+        font-size: 16px !important;
     }
+    [data-testid="stWidgetLabel"] label {
+        color: #1f2937 !important;
+        font-weight: 600 !important;
+        font-size: 16px !important;
+    }
+    /* Selectbox styles */
     .stSelectbox [data-baseweb="select"] {
         background-color: white !important;
         color: #1f2937 !important;
+        border: 2px solid #e5e7eb !important;
+        border-radius: 8px !important;
     }
     .stSelectbox [data-baseweb="select"] div {
         color: #1f2937 !important;
     }
-    .stCheckbox label {
+    /* Checkbox styles */
+    .stCheckbox label p {
         color: #1f2937 !important;
+        font-weight: 500 !important;
     }
-    [data-testid="stWidgetLabel"] label {
-        color: #374151 !important;
+    /* Input text styles */
+    .stTextInput input, .stNumberInput input {
+        background-color: white !important;
+        color: #1f2937 !important;
+        border: 2px solid #e5e7eb !important;
+        border-radius: 8px !important;
     }
+    /* Slider styles */
+    .stSlider [data-baseweb="slider"] {
+        color: #4a90e2 !important;
+    }
+    /* Sidebar styles */
     .sidebar .sidebar-content {
         background: linear-gradient(180deg, #1e3a8a 0%, #3730a3 100%) !important;
     }
